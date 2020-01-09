@@ -1,0 +1,5 @@
+overblog_graphql_endpoint:
+    resource: "@OverblogGraphQLBundle/Resources/config/routing/graphql.yml"
+controllers:
+    resource: ../../src/Controller/
+    type: annotation

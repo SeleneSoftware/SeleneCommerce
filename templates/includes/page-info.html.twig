@@ -1,0 +1,18 @@
+<div class="page-top-info">
+    <div class="container">
+        <h4>{{ title }}</h4>
+        {# Breadcrumb feature needs work.
+        <div class="site-pagination">
+            {% for b in breadcrumb %}
+                {% if b is of_type('string') %}
+                    {% set topBC = b %}
+                    <a href="{{ path(b|lower) }}">{{ b }}</a> /
+                {% else %}
+                    {% dump(b) %}
+                    <a href="{{ path(topBC, {'slug': b.getSlug}) }}">{{ b.getName }}</a> /
+                {% endif %}
+            {% endfor %}
+        </div>
+        #}
+    </div>
+</div>

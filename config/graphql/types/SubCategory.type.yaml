@@ -1,0 +1,18 @@
+SubCategory:
+    type: "object"
+    config:
+        description: "Product SubCategory"
+        fields:
+            id:
+                type: "Int!"
+                description: "The unique ID of the SubCategory."
+            name:
+                type: "String"
+                description: "Name of the SubCategory"
+            slug:
+                type: "String"
+                description: "URL Slug"
+            description:
+                type: "String"
+                description: "Blob to describe the SubCategory"
+
