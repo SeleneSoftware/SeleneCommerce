@@ -6,6 +6,7 @@ use App\Entity\Category;
 use App\Tools\RepositorySlugTrait;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Symfony\Bridge\Doctrine\RegistryInterface;
+use Doctrine\Common\Persistence\ManagerRegistry;
 
 /**
  * @method Category|null find($id, $lockMode = null, $lockVersion = null)
@@ -17,7 +18,7 @@ class CategoryRepository extends ServiceEntityRepository
 {
     use RepositorySlugTrait;
 
-    public function __construct(RegistryInterface $registry)
+    public function __construct(ManagerRegistry $registry)
     {
         parent::__construct($registry, Category::class);
     }
