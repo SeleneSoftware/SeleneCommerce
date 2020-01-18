@@ -4,4 +4,8 @@
 overblog_graphql_single_endpoint:
     resource: "@OverblogGraphQLBundle/Resources/config/routing/single.yaml"
     prefix: /graphql
-
+app_logout:
+    path: logout
+product:
+    path: /{slug}
+    controller: App\Controller\ProductController::index

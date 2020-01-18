@@ -2,8 +2,6 @@
 
 namespace App\Entity;
 
-use Doctrine\Common\Collections\ArrayCollection;
-use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -86,7 +84,7 @@ class Product
         'name' => null,
         'description' => null,
         'option' => [
-            'label'=> null,
+            'label' => null,
             'price' => null,
             'qty' => null,
         ],
@@ -256,5 +254,4 @@ class Product
 
         return $this;
     }
-
 }

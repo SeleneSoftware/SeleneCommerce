@@ -5,7 +5,6 @@ namespace App\Repository;
 use App\Entity\Category;
 use App\Tools\RepositorySlugTrait;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
-use Symfony\Bridge\Doctrine\RegistryInterface;
 use Doctrine\Common\Persistence\ManagerRegistry;
 
 /**
