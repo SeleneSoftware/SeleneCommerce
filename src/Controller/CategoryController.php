@@ -3,8 +3,8 @@
 namespace App\Controller;
 
 use App\Entity\Category;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Entity;
 use App\Entity\SubCategory;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Entity;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 

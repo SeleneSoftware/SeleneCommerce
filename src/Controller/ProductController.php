@@ -10,7 +10,8 @@ use Symfony\Component\Routing\Annotation\Route;
 class ProductController extends AbstractController
 {
     /**
-     * @Route("/{slug}", name="product")
+     * Route defined in routes.yaml.
+     *
      * @Entity("slug", expr="repository.findOneBySlug(slug)")
      */
     public function index(Product $slug)

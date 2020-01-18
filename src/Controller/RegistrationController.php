@@ -30,7 +30,11 @@ class RegistrationController extends AbstractController
                     $user,
                     $form->get('plainPassword')->getData()
                 )
-            );
+            )
+            // TODO
+            // This is just for development and testing.  IK plan on removing it when I start working on the actual user functionality
+                 ->addRole('ROLE_ADMIN')
+             ;
 
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->persist($user);

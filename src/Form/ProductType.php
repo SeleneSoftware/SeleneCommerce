@@ -5,7 +5,6 @@ namespace App\Form;
 use App\Entity\Category;
 use App\Entity\Product;
 use App\Entity\SubCategory;
-use App\Form\OptionsType;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\CollectionType;
@@ -34,11 +33,11 @@ class ProductType extends AbstractType
                 'choice_label' => 'name',
             ])
             ->add('options', CollectionType::class, [
-                'entry_type' =>OptionsType::class,
+                'entry_type' => OptionsType::class,
                 'entry_options' => [
                     'mapped' => true,
                     // 'compound' => false,
-                ]
+                ],
             ])
         ;
     }
