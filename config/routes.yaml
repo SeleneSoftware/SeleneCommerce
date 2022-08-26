@@ -1,11 +1,3 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
-overblog_graphql_single_endpoint:
-    resource: "@OverblogGraphQLBundle/Resources/config/routing/single.yaml"
-    prefix: /graphql
-app_logout:
-    path: logout
-product:
-    path: /{slug}
-    controller: App\Controller\ProductController::index
+controllers:
+    resource: ../src/Controller/
+    type: attribute
