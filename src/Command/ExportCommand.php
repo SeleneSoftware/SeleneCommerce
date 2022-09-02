@@ -2,7 +2,9 @@
 
 namespace App\Command;
 
+use App\Repository\CategoryRepository;
 use App\Repository\ProductRepository;
+use App\Repository\SubcategoryRepository;
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
@@ -22,11 +24,18 @@ use Symfony\Component\Serializer\Serializer;
 )]
 class ExportCommand extends Command
 {
-    protected ProductRepository $repo;
+    protected ProductRepository $productRepo;
+    protected CategoryRepository $categoryRepo;
+    protected SubcategoryRepository $subcategoryRepo;
 
-    public function __construct(ProductRepository $productRepository)
-    {
-        $this->repo = $productRepository;
+    public function __construct(
+        ProductRepository $productRepository,
+        CategoryRepository $categoryRepo,
+        SubcategoryRepository $subcategoryRepo
+    ) {
+        $this->productRepo = $productRepository;
+        $this->categoryRepo = $categoryRepository;
+        $this->subcategoryRepo = $subcategoryRepository;
         parent::__construct();
     }
 
