@@ -30,8 +30,8 @@ class ExportCommand extends Command
 
     public function __construct(
         ProductRepository $productRepository,
-        CategoryRepository $categoryRepo,
-        SubcategoryRepository $subcategoryRepo
+        CategoryRepository $categoryRepository,
+        SubcategoryRepository $subcategoryRepository
     ) {
         $this->productRepo = $productRepository;
         $this->categoryRepo = $categoryRepository;
@@ -41,10 +41,12 @@ class ExportCommand extends Command
 
     protected function configure(): void
     {
-        // $this
-        //     ->addArgument('arg1', InputArgument::OPTIONAL, 'Argument description')
-        //     ->addOption('option1', null, InputOption::VALUE_NONE, 'Option description')
-        // ;
+        $this
+            // ->addArgument('product', InputArgument::OPTIONAL, 'Export Product List')
+            // ->addArgument('category', InputArgument::OPTIONAL, 'Export Category List')
+            // ->addArgument('subcategory', InputArgument::OPTIONAL, 'Export SubCategory List')
+            ->addOption('list', null, InputOption::VALUE_REQUIRED, 'product, category, subcategory export. default is product', 'product')
+        ;
     }
 
     protected function execute(InputInterface $input, OutputInterface $output): int
@@ -61,7 +63,20 @@ class ExportCommand extends Command
         //
         // $io->success('You have a new command! Now make it your own! Pass --help to see your options.');
 
-        $products = $this->repo->findAll();
+        switch ($input->getOption('list')) {
+            case 'category':
+                $objContent = $this->categoryRepo->findAll();
+
+                break;
+
+            case 'subcategory':
+                $objContent = $this->subcategoryRepo->findAll();
+
+                break;
+
+            default:
+                $objContent = $this->productRepo->findAll();
+        }
 
         $encoders = [new XmlEncoder(), new JsonEncoder()];
         $defaultContext = [
@@ -74,7 +89,7 @@ class ExportCommand extends Command
 
         $serializer = new Serializer($normalizers, $encoders);
 
-        $jsonContent = $serializer->serialize($products, 'json');
+        $jsonContent = $serializer->serialize($objContent, 'json');
 
         $output->write($jsonContent);
 

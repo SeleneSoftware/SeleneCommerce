@@ -5,6 +5,8 @@ namespace App\Entity;
 use App\Interfaces\DatedEntityInterface;
 use App\Repository\ProductRepository;
 use App\Traits\EntityDate;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
 
@@ -36,6 +38,14 @@ class Product implements DatedEntityInterface
 
     #[ORM\Column(length: 255)]
     private ?string $type = null;
+
+    #[ORM\ManyToMany(targetEntity: Image::class)]
+    private Collection $image;
+
+    public function __construct()
+    {
+        $this->image = new ArrayCollection();
+    }
 
     public function getId(): ?int
     {
@@ -110,6 +120,30 @@ class Product implements DatedEntityInterface
     public function setType(string $type): self
     {
         $this->type = $type;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection<int, Image>
+     */
+    public function getImage(): Collection
+    {
+        return $this->image;
+    }
+
+    public function addImage(Image $image): self
+    {
+        if (!$this->image->contains($image)) {
+            $this->image->add($image);
+        }
+
+        return $this;
+    }
+
+    public function removeImage(Image $image): self
+    {
+        $this->image->removeElement($image);
 
         return $this;
     }
