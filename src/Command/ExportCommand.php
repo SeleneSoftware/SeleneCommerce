@@ -11,7 +11,6 @@ use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
-use Symfony\Component\Console\Style\SymfonyStyle;
 use Symfony\Component\Serializer\Encoder\JsonEncoder;
 use Symfony\Component\Serializer\Encoder\XmlEncoder;
 use Symfony\Component\Serializer\Normalizer\AbstractNormalizer;
@@ -51,18 +50,6 @@ class ExportCommand extends Command
 
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
-        // $io = new SymfonyStyle($input, $output);
-        //
-        // if ($arg1) {
-        //     $io->note(sprintf('Exporting products as %s', 'JSON'));
-        // }
-        //
-        // if ($input->getOption('option1')) {
-        //     // ...
-        // }
-        //
-        // $io->success('You have a new command! Now make it your own! Pass --help to see your options.');
-
         switch ($input->getOption('list')) {
             case 'category':
                 $objContent = $this->categoryRepo->findAll();
@@ -85,7 +72,6 @@ class ExportCommand extends Command
             },
         ];
         $normalizers = [new ObjectNormalizer(null, null, null, null, null, null, $defaultContext)];
-        // $normalizers = [new ObjectNormalizer()];
 
         $serializer = new Serializer($normalizers, $encoders);
 
