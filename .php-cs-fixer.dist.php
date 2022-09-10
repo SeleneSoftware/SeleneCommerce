@@ -20,6 +20,7 @@ return $config->setRules([
     // 'no_multiple_statements_per_line' => true,
     '@PHP81Migration' => true,
     '@PhpCsFixer' => true,
+    'class_attributes_separation' => ['elements' => ['property' => 'one']],
 ])
     ->setFinder($finder)
 ;
