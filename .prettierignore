@@ -1,0 +1,14 @@
+public
+vendor
+var
+composer.*
+config
+tests
+translations
+docker*
+Dockerfile
+package*
+phpunit.xml.dist
+symfony.lock
+webpack.config.js
+.php-cs-fixer*
