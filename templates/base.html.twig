@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
+        <meta charset="UTF-8" />
+        <title>
+            {% block title %}
+                Welcome!
+            {% endblock %}
+        </title>
+        <link rel="icon"
+            href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>" />
         {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
         {% block stylesheets %}
             {{ encore_entry_link_tags('app') }}
@@ -13,30 +18,39 @@
             {{ encore_entry_script_tags('app') }}
         {% endblock %}
     </head>
-    <body>
+    <body class={{ pageLayout|default('') }}>
         {% block body %}
             <div class="container">
-                <div class="header">Header</div>
-                <div class="hero">
-                    <img src="https://via.placeholder.com/1440x600/fff.png">
+                <div class="header">
+                    Header
                 </div>
-                {{ component('navbar',
-                {
-                tag: 'nav',
-                class: 'nav',
-                itemTag: 'span',
-                itemClass: 'nav-item',
-                linkClass: 'nav-link',
-                }
-                ) }}
-                <div class="featured">
-                    <img src="https://via.placeholder.com/300/09f/fff.png">
-                    <img src="https://via.placeholder.com/300/09f/fff.png">
-                    <img src="https://via.placeholder.com/300/09f/fff.png">
-                    <img src="https://via.placeholder.com/300/09f/fff.png">
-                    <img src="https://via.placeholder.com/300/09f/fff.png">
-                    <img src="https://via.placeholder.com/300/09f/fff.png">
-                </div>
+                {% block hero %}
+                    <div class="hero">
+                        <img src="https://via.placeholder.com/1440x600/fff.png" />
+                    </div>
+                {% endblock %}
+                {{
+                    component(
+                        'navbar',
+                        {
+                            tag: 'nav',
+                            class: 'nav',
+                            itemTag: 'span',
+                            itemClass: 'nav-item',
+                            linkClass: 'nav-link'
+                        }
+                    )
+                }}
+                {% block content %}
+                    <div class="content featured">
+                        <img src="https://via.placeholder.com/300/09f/fff.png" />
+                        <img src="https://via.placeholder.com/300/09f/fff.png" />
+                        <img src="https://via.placeholder.com/300/09f/fff.png" />
+                        <img src="https://via.placeholder.com/300/09f/fff.png" />
+                        <img src="https://via.placeholder.com/300/09f/fff.png" />
+                        <img src="https://via.placeholder.com/300/09f/fff.png" />
+                    </div>
+                {% endblock %}
                 <div class="footer"></div>
             </div>
         {% endblock %}

@@ -1,12 +1,13 @@
 {% extends 'base.html.twig' %}
 
-{% set pageLayout="no-hero category-page" %}
+{% set pageLayout = 'no-hero subcategory-page' %}
 
 {% block title %}
-    Hello CategoryController!
+    Hello CategoryController! Now with SUB Categories!
 {% endblock %}
 
 {% block hero %}
+
 {% endblock %}
 
 {% block content %}
@@ -20,6 +21,6 @@
                 </span>
             {% endfor %}
         </div>
-        <div class="products">This will be the list of products</div>
+        <div class="products">This will be the list of products in {{ subcat.getName }}</div>
     </div>
 {% endblock %}
