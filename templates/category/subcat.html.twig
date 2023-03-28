@@ -21,6 +21,16 @@
                 </span>
             {% endfor %}
         </div>
-        <div class="products">This will be the list of products in {{ subcat.getName }}</div>
+        <div class="subcat-title">{{ subcat.getName }}</div>
+        <div class="products">
+            {% for p in subcat.getProducts %}
+                <div class="prod">
+                    <a href="{{ path('product', {'slug': p.getSlug}) }}">
+                        <img src="https://via.placeholder.com/300/09f/fff.png" />
+                        <span class="name">{{ p.getName }}</span>
+                    </a>
+                </div>
+                {% endfor %}
+        </div>
     </div>
 {% endblock %}
