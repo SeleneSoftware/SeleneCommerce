@@ -1,9 +1,0 @@
-<{{ tag }} class="{{ class }}">
-{% for cat in computed.categories %}
-<{{ itemTag}} class="itemClass">
-<a href="{{ path('category', {'slug': cat.getSlug}) }}" class="{{ linkClass }}">
-    {{ cat.getName }}
-</a>
-</{{ itemTag }}>
-{% endfor %}
-</{{ tag }}
