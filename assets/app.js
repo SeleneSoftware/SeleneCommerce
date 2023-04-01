@@ -5,11 +5,11 @@
  * (and its CSS file) in your base layout (base.html.twig).
  */
 
-// import "./js/vendor/modernizr-2.6.2-respond-1.1.0.min.js";
-require('modernizr');
-require('respond');
-
 import "./js/plugins.js";
+import "./js/vendor/modernizr-2.6.2-respond-1.1.0.min.js";
+// require('modernizr');
+// require('respond');
+
 import "./js/main.js";
 // require('font-awesome/css/font-awesome.css');
 
@@ -19,8 +19,6 @@ import "./css/normalize-and-boilerplate.css";
 // import "./css/flexslider.css";
 require('flexslider');
 import "./css/style.css";
-// import "./css/slider.css";
-
 
 
 // start the Stimulus application

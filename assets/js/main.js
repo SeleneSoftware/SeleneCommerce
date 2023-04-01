@@ -12,7 +12,7 @@ $(document).ready(function(){
   // $(".product-remove").on('click', function(e) {
   //   $(this).parent(".cart-item").fadeOut("slow");
   //   e.preventDefault();
-  // });
+  // }); 
 
   // Toggle search
   // ------------------------------------------------------------------------
@@ -29,7 +29,7 @@ $(document).ready(function(){
         $(".search-wrapper").removeClass("show-search");
       }
     });
-  // }
+  // }       
 
   // Styled drop down
   // ------------------------------------------------------------------------
@@ -40,7 +40,7 @@ $(document).ready(function(){
   $(".toggle-nav").on('click', function(e) {
     $(".main-nav, .header-controls").slideToggle("slow");
     e.preventDefault();
-  });
+  });  
 
   // Toggle Main Nav (smaller screens)
   // ------------------------------------------------------------------------
@@ -50,7 +50,7 @@ $(document).ready(function(){
   //   // options
   //   itemSelector: '.grid-item',
   //   layoutMode: 'fitRows'
-  // });
+  // });  
 
 });
 

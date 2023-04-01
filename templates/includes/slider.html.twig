@@ -7,7 +7,7 @@
             <li>
                 <div class="row max-inner">
                     <div class="columns col-12 slide-image">
-                        <img src="{{ asset('build/images/slide-image-1.jpg') }}" />
+                        <img src="{% apply slider1_image %}{{asset('build/images/slide-image-1.jpg')}}{% endapply %}" />
                     </div>
                     <div class="columns col-12 col-centered slide-content">
                         <h2>Vogue Style</h2>
@@ -21,7 +21,7 @@
             <li>
                 <div class="row max-inner">
                     <div class="columns col-12 slide-image">
-                        <img src="{{ asset('build/images/slide-image-2.jpg') }}" />
+                        <img src="{% apply slider2_image %}{{asset('build/images/slide-image-2.jpg')}}{% endapply %}" />
                     </div>
                     <div class="columns col-12 col-centered slide-content">
                         <h2>New Collection</h2>
@@ -35,7 +35,7 @@
             <li>
                 <div class="row max-inner">
                     <div class="columns col-12 slide-image">
-                        <img src="{{ asset('build/images/slide-image-3.jpg') }}" />
+                        <img src="{% apply slider3_image %}{{asset('build/images/slide-image-3.jpg')}}{% endapply %}" />
                     </div>
                     <div class="columns col-12 col-centered slide-content">
                         <h2>Feel the luxury</h2>
@@ -49,4 +49,3 @@
     </div>
 </section>
 <!-- end: content slider-->
-
