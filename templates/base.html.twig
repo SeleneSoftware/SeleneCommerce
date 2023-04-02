@@ -22,12 +22,25 @@
 
 </head>
 <body>
-    {{ include('includes/header.html.twig') }}
-    {{ include('includes/slider.html.twig') }}
-    {{ include('includes/product-grid.html.twig') }}
-    {{ include('includes/collections-grid.html.twig') }}
-    {{ include('includes/blog-grid.html.twig') }}
+    {% block header %}
+        {{ include('includes/header.html.twig') }}
+    {% endblock %}
+    {% block slider %}
+        {{ include('includes/slider.html.twig') }}
+    {% endblock %}
+    {% block productGrid %}
+        {{ include('includes/product-grid.html.twig') }}
+    {% endblock %}
+    {% block collectionsGrid %}
+        {{ include('includes/collections-grid.html.twig') }}
+    {% endblock %}
+    {% block blogGrid %}
+        {{ include('includes/blog-grid.html.twig') }}
+    {% endblock %}
+    {% block formGrid %}
+    {% endblock %}
 
+    {{ include('includes/footer.html.twig') }}
     <!-- start: copyright -->
     <section class="footer-copyright">
         <div class="row max-inner">
