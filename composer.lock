@@ -2224,12 +2224,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SeleneSoftware/seleneInventoryBundle.git",
-                "reference": "eb61eb5bb486c2ba700cb31534d0aad5f01b7cf0"
+                "reference": "c3755dc70dbe0469d5d7dd40eacfa893a57db9ce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SeleneSoftware/seleneInventoryBundle/zipball/eb61eb5bb486c2ba700cb31534d0aad5f01b7cf0",
-                "reference": "eb61eb5bb486c2ba700cb31534d0aad5f01b7cf0",
+                "url": "https://api.github.com/repos/SeleneSoftware/seleneInventoryBundle/zipball/c3755dc70dbe0469d5d7dd40eacfa893a57db9ce",
+                "reference": "c3755dc70dbe0469d5d7dd40eacfa893a57db9ce",
                 "shasum": ""
             },
             "require": {
@@ -2260,7 +2260,7 @@
                 "source": "https://github.com/SeleneSoftware/seleneInventoryBundle/tree/pricing",
                 "issues": "https://github.com/SeleneSoftware/seleneInventoryBundle/issues"
             },
-            "time": "2023-04-03T16:20:41+00:00"
+            "time": "2023-04-03T18:10:32+00:00"
         },
         {
             "name": "symfony/asset",
