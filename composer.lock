@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cb5aed0be4a3f69897c3c84a3c82fd35",
+    "content-hash": "2643e536d25dbc0082929655736ac3a2",
     "packages": [
         {
             "name": "dflydev/dot-access-data",
@@ -2220,22 +2220,21 @@
         },
         {
             "name": "selenesoftware/inventory-bundle",
-            "version": "dev-main",
+            "version": "dev-pricing",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SeleneSoftware/seleneInventoryBundle.git",
-                "reference": "f6612ca4710091f9411944e0257c4f7b0ec5cabe"
+                "reference": "eb61eb5bb486c2ba700cb31534d0aad5f01b7cf0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SeleneSoftware/seleneInventoryBundle/zipball/f6612ca4710091f9411944e0257c4f7b0ec5cabe",
-                "reference": "f6612ca4710091f9411944e0257c4f7b0ec5cabe",
+                "url": "https://api.github.com/repos/SeleneSoftware/seleneInventoryBundle/zipball/eb61eb5bb486c2ba700cb31534d0aad5f01b7cf0",
+                "reference": "eb61eb5bb486c2ba700cb31534d0aad5f01b7cf0",
                 "shasum": ""
             },
             "require": {
                 "symfony/doctrine-bridge": "^6.2"
             },
-            "default-branch": true,
             "type": "symfony-bundle",
             "autoload": {
                 "psr-4": {
@@ -2258,10 +2257,10 @@
             ],
             "description": "Add Inventory Management Entities to your project.",
             "support": {
-                "source": "https://github.com/SeleneSoftware/seleneInventoryBundle/tree/main",
+                "source": "https://github.com/SeleneSoftware/seleneInventoryBundle/tree/pricing",
                 "issues": "https://github.com/SeleneSoftware/seleneInventoryBundle/issues"
             },
-            "time": "2023-03-30T20:23:07+00:00"
+            "time": "2023-04-03T16:20:41+00:00"
         },
         {
             "name": "symfony/asset",

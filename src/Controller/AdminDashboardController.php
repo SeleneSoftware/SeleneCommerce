@@ -2,16 +2,19 @@
 
 namespace App\Controller;
 
-use App\Entity\Location;
-use App\Entity\Product;
 use EasyCorp\Bundle\EasyAdminBundle\Config\MenuItem;
 use Selene\CMSBundle\Controller\Admin\DashboardController;
+use Selene\InventoryBundle\Entity\Location;
+use Selene\InventoryBundle\Entity\Product;
+use Selene\InventoryBundle\Traits\DashboardControllerTrait;
 
 class AdminDashboardController extends DashboardController
 {
+    use DashboardControllerTrait;
+
     public function configureMenuItems(): iterable
     {
-        foreach (parent::configureMenuItems() as $item) {
+        foreach ($this->InventoryMenuItems() as $item) {
             yield $item;
         }
         yield MenuItem::linkToCrud('Products', 'fas fa-list', Product::class);
