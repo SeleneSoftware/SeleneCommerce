@@ -1,0 +1,55 @@
+@import "includes/fonts";
+@import "includes/buttons-links";
+@import "includes/helper";
+@import "includes/headings";
+@import "includes/blockquotes";
+@import "includes/paragraphs";
+@import "includes/dropkick";
+@import "includes/forms";
+@import "includes/dropdown";
+@import "includes/grid";
+@import "includes/header";
+@import "includes/content-slider";
+@import "includes/product-grid";
+@import "includes/collections";
+@import "includes/blog";
+@import "includes/footer";
+@import "includes/breadcrumbs";
+@import "includes/filter-sort";
+@import "includes/shop-grid";
+@import "includes/product-page";
+@import "includes/shopping-cart";
+@import "includes/flexslider";
+@import "includes/mediaqueries";
+
+/* Structure */
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+::-moz-selection {
+    background: #eee;
+    text-shadow: none;
+
+}
+::selection {
+    background: #eee;
+    text-shadow: none;
+
+}
+html, body {
+    font-size: 100%;
+
+}
+body {
+    background: #fff;
+    color: #6e6e6e;
+    cursor: default;
+    font: normal 14px/25px "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+
+}

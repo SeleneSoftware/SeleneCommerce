@@ -1,0 +1,61 @@
+.content-slider {
+    color: #fff;
+    padding: 0 0 100px 0;
+    position: relative;
+    z-index: 2;
+    .flexslider {
+        li {
+            padding: 0;
+            .slide-image {
+                width: 100%;
+
+            }
+            h2 {
+                color: #fff;
+                font-size: 72px;
+                font-family: "novecento_sans_widemedium";
+                text-align: center;
+                margin-bottom: 20px;
+
+            }
+            h3 {
+                font-family: "novecento_sans_widemedium";
+                font-size: 30px;
+                text-align: center;
+
+            }
+            .slide-content {
+                position: absolute;
+                top: 27%;
+                left: 0;
+                right: 0;
+                p {
+                    font-size: 18px;
+                    line-height: 30px;
+                    margin: 0;
+                    padding: 65px 0;
+
+                }
+                .btn {
+                    background: #fff;
+                    font-family: "novecento_sans_widemedium";
+                    display: table;
+                    margin: 50px auto;
+                    padding: 25px 60px;
+                    border: none;
+                    &:hover {
+                        background: #111;
+                        color: #fff;
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+}
+

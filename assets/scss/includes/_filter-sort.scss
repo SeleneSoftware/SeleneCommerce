@@ -1,0 +1,99 @@
+.filter-sort {
+    text-transform: uppercase;
+    padding-bottom: 50px;
+    position: relative;
+    z-index: 12;
+    .sort-options {
+        width: auto !important;
+        & > span {
+            color: #9d9c9c;
+            font-size: 11px;
+
+        }
+
+    }
+    .products-paging {
+        display: table;
+        float: right;
+        padding-left: 65px;
+        width: auto !important;
+        padding-top: 26px;
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            list-style-type: none;
+            float: right;
+            li {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                list-style-type: none;
+                color: #9d9c9c;
+                margin-left: 3px;
+                float: left;
+                font-size: 11px;
+                a {
+                    background: #f0f0f0;
+                    color: #9d9c9c;
+                    display: block;
+                    float: left;
+                    min-width: 40px;
+                    padding: 12px 13px;
+                    text-align: center;
+                    line-height: 100%;
+
+                }
+
+            }
+
+        }
+
+    }
+
+}
+.filter-sort .products-paging ul li a.current-prod-page, .filter-sort .products-paging ul li a:hover {
+    background: #575757;
+    color: #fff;
+
+}
+.product-pagination {
+    padding: 20px 0 70px;
+    .paging-list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        list-style-type: none;
+        float: right;
+        li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            list-style-type: none;
+            color: #9d9c9c;
+            margin-left: 3px;
+            float: left;
+            font-size: 11px;
+            a {
+                background: #f0f0f0;
+                color: #9d9c9c;
+                display: block;
+                float: left;
+                min-width: 40px;
+                padding: 12px 13px;
+                text-align: center;
+                line-height: 100%;
+
+            }
+
+        }
+
+    }
+
+}
+.product-pagination .paging-list li a.current-prod-page, .product-pagination .paging-list li a:hover {
+    background: #575757;
+    color: #fff;
+
+}
+
