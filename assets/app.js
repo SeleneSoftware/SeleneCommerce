@@ -11,7 +11,7 @@
 // import "./css/normalize-and-boilerplate.css";
 
 import Dropkick from 'dropkickjs';
-import Shuffle from 'shufflejs';
+// import Shuffle from 'shufflejs';
 
 import "./js/includes/searchToggle.js";
 import "./js/includes/styledDropdown.js";
