@@ -5,8 +5,8 @@
  * (and its CSS file) in your base layout (base.html.twig).
  */
 
-import "./js/plugins.js";
-import "./js/vendor/modernizr-2.6.2-respond-1.1.0.min.js";
+// import "./js/plugins.js";
+// import "./js/vendor/modernizr-2.6.2-respond-1.1.0.min.js";
 // require('modernizr');
 // require('respond');
 
@@ -18,6 +18,15 @@ import "./js/main.js";
 // import "./css/normalize-and-boilerplate.css";
 // import "./css/flexslider.css";
 // require('flexslider');
+
+import Dropkick from 'dropkickjs';
+import Shuffle from 'shufflejs';
+
+import "./js/includes/searchToggle.js";
+import "./js/includes/styledDropdown.js";
+import "./js/includes/mainNav.js";
+import "./js/includes/slider.js";
+
 import "./scss/styles.scss";
 
 
