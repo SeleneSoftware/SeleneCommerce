@@ -15,10 +15,10 @@ import "./js/main.js";
 
 // any CSS you import will output into a single css file (app.css in this case)
 // SCSS files can be compiled here the same way
-import "./css/normalize-and-boilerplate.css";
+// import "./css/normalize-and-boilerplate.css";
 // import "./css/flexslider.css";
-require('flexslider');
-import "./css/style.css";
+// require('flexslider');
+import "./scss/styles.scss";
 
 
 // start the Stimulus application

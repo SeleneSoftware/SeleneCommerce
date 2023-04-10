@@ -1,0 +1,141 @@
+.header {
+    & > .max-inner {
+        padding: 55px 0;
+
+    }
+    .columns {
+        &:last-child {
+            padding-left: 0;
+
+        }
+
+    }
+    .logo {
+        color: #444444;
+        display: block;
+        font-family: "novecento_sans_widedemibold";
+        font-size: 21px;
+        letter-spacing: 5px;
+        line-height: 100%;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-top: 4px;
+
+    }
+    .toggle-nav {
+        background: #f0f0f0;
+        color: #9d9c9c;
+        display: none;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: "novecento_sans_widedemibold";
+        font-size: 12px;
+        &:hover {
+            background: #6e6e6e;
+            color: #fff;
+
+        }
+
+    }
+    .main-nav {
+        padding-top: 2px;
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            list-style-type: none;
+            font-family: "novecento_sans_widedemibold";
+            font-size: 12px;
+            li {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                list-style-type: none;
+                float: left;
+                padding: 0 40px 0 0;
+                a {
+                    display: block;
+                    text-transform: uppercase;
+
+                }
+
+            }
+
+        }
+
+    }
+    .header-controls {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        list-style-type: none;
+        display: table;
+        float: right;
+        font-size: 11px;
+        margin-top: -2px;
+        text-transform: uppercase;
+        li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            list-style-type: none;
+            color: #9d9c9c;
+            display: table;
+            float: left;
+            font-family: "novecento_sans_widedemibold";
+            padding: 0 3px 0 0;
+            &:last-child {
+                padding-right: 0;
+
+            }
+            &.header-search {
+                position: relative;
+                .search-wrapper {
+                    display: none;
+                    margin: 0;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 3px;
+                    input[type=text] {
+                        padding: 7px;
+
+                    }
+                    &.show-search {
+                        display: block;
+
+                    }
+
+                }
+
+            }
+            .fa {
+                color: #ccc;
+                font-size: 15px;
+                padding: 0 7px 0 0;
+
+            }
+            a {
+                background: #f0f0f0;
+                color: #9d9c9c;
+                display: block;
+                padding: 7px 14px;
+                line-height: 100%;
+                &:hover {
+                    background: #6e6e6e;
+                    color: #fff;
+                    .fa {
+                        color: #fff;
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+}
+

@@ -1,0 +1,53 @@
+.highlight-color {
+    color: #6e6e6e;
+
+}
+.highlight-bg {
+    background-color: #6e6e6e;
+
+}
+.float-left {
+    float: left !important;
+
+}
+.float-right {
+    float: right !important;
+
+}
+.no-left-pad {
+    padding-left: 0 !important;
+
+}
+.no-right-pad {
+    padding-right: 0 !important;
+
+}
+.uppercase, .cap {
+    text-transform: uppercase;
+
+}
+.lowercase {
+    text-transform: lowercase;
+
+}
+.max-inner {
+    display: table;
+    margin: auto;
+    width: 100%;
+    max-width: 1170px;
+
+}
+.clearfix, .row, .header .main-nav {
+    *zoom: 1;
+
+}
+.clearfix:before, .row:before, .header .main-nav:before, .clearfix:after, .row:after, .header .main-nav:after {
+    content: " ";
+    display: table;
+
+}
+.clearfix:after, .row:after, .header .main-nav:after {
+    clear: both;
+
+}
+

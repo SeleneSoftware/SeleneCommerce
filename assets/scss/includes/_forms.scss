@@ -1,0 +1,307 @@
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="url"],
+input[type="color"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+textarea {
+    background: #fff;
+    color: #6d6d6d;
+    display: table;
+    margin: 0 0 10px 0;
+    padding: 15px 20px 12px 20px;
+    width: 100%;
+    border: 1px solid #dfdfdf;
+    outline: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+input[type="email"]::-webkit-input-placeholder,
+input[type="number"]::-webkit-input-placeholder,
+input[type="password"]::-webkit-input-placeholder,
+input[type="search"]::-webkit-input-placeholder,
+input[type="tel"]::-webkit-input-placeholder,
+input[type="text"]::-webkit-input-placeholder,
+input[type="url"]::-webkit-input-placeholder,
+input[type="color"]::-webkit-input-placeholder,
+input[type="date"]::-webkit-input-placeholder,
+input[type="datetime"]::-webkit-input-placeholder,
+input[type="datetime-local"]::-webkit-input-placeholder,
+input[type="month"]::-webkit-input-placeholder,
+input[type="time"]::-webkit-input-placeholder,
+input[type="week"]::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #666;
+}
+input[type="email"]:-moz-placeholder,
+input[type="number"]:-moz-placeholder,
+input[type="password"]:-moz-placeholder,
+input[type="search"]:-moz-placeholder,
+input[type="tel"]:-moz-placeholder,
+input[type="text"]:-moz-placeholder,
+input[type="url"]:-moz-placeholder,
+input[type="color"]:-moz-placeholder,
+input[type="date"]:-moz-placeholder,
+input[type="datetime"]:-moz-placeholder,
+input[type="datetime-local"]:-moz-placeholder,
+input[type="month"]:-moz-placeholder,
+input[type="time"]:-moz-placeholder,
+input[type="week"]:-moz-placeholder,
+textarea:-moz-placeholder {
+    color: #666;
+}
+input[type="email"]:-moz-placeholder:focus,
+input[type="number"]:-moz-placeholder:focus,
+input[type="password"]:-moz-placeholder:focus,
+input[type="search"]:-moz-placeholder:focus,
+input[type="tel"]:-moz-placeholder:focus,
+input[type="text"]:-moz-placeholder:focus,
+input[type="url"]:-moz-placeholder:focus,
+input[type="color"]:-moz-placeholder:focus,
+input[type="date"]:-moz-placeholder:focus,
+input[type="datetime"]:-moz-placeholder:focus,
+input[type="datetime-local"]:-moz-placeholder:focus,
+input[type="month"]:-moz-placeholder:focus,
+input[type="time"]:-moz-placeholder:focus,
+input[type="week"]:-moz-placeholder:focus,
+textarea:-moz-placeholder:focus {
+    color: #51b27f;
+}
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="text"]:focus,
+input[type="url"]:focus,
+input[type="color"]:focus,
+input[type="date"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+textarea:focus {
+    color: #444444;
+}
+input[type="email"]:focus::-webkit-input-placeholder,
+input[type="number"]:focus::-webkit-input-placeholder,
+input[type="password"]:focus::-webkit-input-placeholder,
+input[type="search"]:focus::-webkit-input-placeholder,
+input[type="tel"]:focus::-webkit-input-placeholder,
+input[type="text"]:focus::-webkit-input-placeholder,
+input[type="url"]:focus::-webkit-input-placeholder,
+input[type="color"]:focus::-webkit-input-placeholder,
+input[type="date"]:focus::-webkit-input-placeholder,
+input[type="datetime"]:focus::-webkit-input-placeholder,
+input[type="datetime-local"]:focus::-webkit-input-placeholder,
+input[type="month"]:focus::-webkit-input-placeholder,
+input[type="time"]:focus::-webkit-input-placeholder,
+input[type="week"]:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
+    color: #444444;
+}
+textarea {
+    padding: 15px 20px 15px 20px;
+}
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="text"]:focus,
+input[type="url"]:focus,
+input[type="color"]:focus,
+input[type="date"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus {
+    background: #e6e6e6;
+    color: #444444;
+}
+input[type="submit"],
+.submit {
+    background: #444444;
+    color: #fff;
+    display: table;
+    font-family: "novecento_sans_widemedium";
+    line-height: 100%;
+    outline: none;
+    padding: 15px 40px;
+    text-align: center;
+    width: 100%;
+    border: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+input[type="submit"]:hover,
+.submit:hover {
+    color: #fff;
+    background: #6e6e6e;
+}
+.inline-label {
+    font-family: "novecento_sans_widemedium";
+    padding: 0.55556rem 0;
+    float: left;
+}
+.contact-form {
+    padding: 0 0 80px 0;
+    input[type="submit"] {
+        margin-top: 30px;
+    }
+}
+.validation-feedback {
+    &.failed {
+        &:after {
+            color: #fff;
+            content: "Validation failed";
+            text-align: center;
+            display: block;
+            font-size: 20px;
+            font-weight: 300;
+            background: #f66;
+            margin: 13px auto 15px;
+            padding: 11px 5px;
+        }
+    }
+    &.passed {
+        &:after {
+            color: #fff;
+            content: "Validation passed!";
+            text-align: center;
+            display: block;
+            font-size: 20px;
+            font-weight: 300;
+            background: #6e6e6e;
+            margin: 13px auto 15px;
+            padding: 11px 5px;
+        }
+    }
+}
+form input[type="email"].invalid,
+form input[type="number"].invalid,
+form input[type="password"].invalid,
+form input[type="search"].invalid,
+form input[type="tel"].invalid,
+form input[type="text"].invalid,
+form input[type="url"].invalid,
+form input[type="color"].invalid,
+form input[type="date"].invalid,
+form input[type="datetime"].invalid,
+form input[type="datetime-local"].invalid,
+form input[type="month"].invalid,
+form input[type="time"].invalid,
+form input[type="week"].invalid {
+    background: rgba(255, 102, 102, 0.5);
+    border-color: #f66;
+}
+form {
+    textarea {
+        &.invalid {
+            background: rgba(255, 102, 102, 0.5);
+            border-color: #f66;
+        }
+    }
+    input[type="submit"] {
+        text-transform: uppercase;
+    }
+}
+.cc-icon,
+.cc-exp-icon,
+.cc-cvc-icon {
+    position: relative;
+}
+.cc-icon:before,
+.cc-exp-icon:before,
+.cc-cvc-icon:before {
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: absolute;
+    z-index: 3;
+    left: 23px;
+    top: 18px;
+}
+.cc-icon input[type="email"],
+.cc-icon input[type="number"],
+.cc-icon input[type="password"],
+.cc-icon input[type="search"],
+.cc-icon input[type="tel"],
+.cc-icon input[type="text"],
+.cc-icon input[type="url"],
+.cc-icon input[type="color"],
+.cc-icon input[type="date"],
+.cc-icon input[type="datetime"],
+.cc-icon input[type="datetime-local"],
+.cc-icon input[type="month"],
+.cc-icon input[type="time"],
+.cc-icon input[type="week"],
+.cc-icon textarea,
+.cc-exp-icon input[type="email"],
+.cc-exp-icon input[type="number"],
+.cc-exp-icon input[type="password"],
+.cc-exp-icon input[type="search"],
+.cc-exp-icon input[type="tel"],
+.cc-exp-icon input[type="text"],
+.cc-exp-icon input[type="url"],
+.cc-exp-icon input[type="color"],
+.cc-exp-icon input[type="date"],
+.cc-exp-icon input[type="datetime"],
+.cc-exp-icon input[type="datetime-local"],
+.cc-exp-icon input[type="month"],
+.cc-exp-icon input[type="time"],
+.cc-exp-icon input[type="week"],
+.cc-exp-icon textarea,
+.cc-cvc-icon input[type="email"],
+.cc-cvc-icon input[type="number"],
+.cc-cvc-icon input[type="password"],
+.cc-cvc-icon input[type="search"],
+.cc-cvc-icon input[type="tel"],
+.cc-cvc-icon input[type="text"],
+.cc-cvc-icon input[type="url"],
+.cc-cvc-icon input[type="color"],
+.cc-cvc-icon input[type="date"],
+.cc-cvc-icon input[type="datetime"],
+.cc-cvc-icon input[type="datetime-local"],
+.cc-cvc-icon input[type="month"],
+.cc-cvc-icon input[type="time"],
+.cc-cvc-icon input[type="week"],
+.cc-cvc-icon textarea {
+    padding-left: 45px;
+}
+.cc-icon {
+    &:before {
+        content: "\f09d";
+    }
+}
+.cc-exp-icon {
+    &:before {
+        content: "\f073";
+    }
+}
+.cc-cvc-icon {
+    &:before {
+        content: "\f023";
+    }
+}
