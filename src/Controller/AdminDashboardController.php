@@ -17,7 +17,7 @@ class AdminDashboardController extends DashboardController
         foreach ($this->InventoryMenuItems() as $item) {
             yield $item;
         }
-        yield MenuItem::linkToCrud('Products', 'fas fa-list', Product::class);
-        yield MenuItem::linkToCrud('Locations', 'fas fa-list', Location::class);
+        // yield MenuItem::linkToCrud('Products', 'fas fa-list', Product::class);
+        // yield MenuItem::linkToCrud('Locations', 'fas fa-list', Location::class);
     }
 }
