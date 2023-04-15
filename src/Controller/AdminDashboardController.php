@@ -15,6 +15,8 @@ class AdminDashboardController extends DashboardController
     public function configureMenuItems(): iterable
     {
         foreach ($this->InventoryMenuItems() as $item) {
+            // dump($item);
+            // exit;
             yield $item;
         }
         // yield MenuItem::linkToCrud('Products', 'fas fa-list', Product::class);
