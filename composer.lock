@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5d87e8b31b9ea73dd8626e428cbc068e",
+    "content-hash": "289914a12c5754f12cc157b2beb33a8c",
     "packages": [
         {
             "name": "dflydev/dot-access-data",
@@ -2163,12 +2163,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SeleneSoftware/seleneCMSBundle.git",
-                "reference": "1bf16d90f9b0cda65e0221558ab8d75b0c698f3c"
+                "reference": "58a9de210be56d4250b44388c9f3cd73b340a75f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SeleneSoftware/seleneCMSBundle/zipball/1bf16d90f9b0cda65e0221558ab8d75b0c698f3c",
-                "reference": "1bf16d90f9b0cda65e0221558ab8d75b0c698f3c",
+                "url": "https://api.github.com/repos/SeleneSoftware/seleneCMSBundle/zipball/58a9de210be56d4250b44388c9f3cd73b340a75f",
+                "reference": "58a9de210be56d4250b44388c9f3cd73b340a75f",
                 "shasum": ""
             },
             "require": {
@@ -2216,26 +2216,25 @@
                 "issues": "https://github.com/SeleneSoftware/seleneCMSBundle/issues",
                 "source": "https://github.com/SeleneSoftware/seleneCMSBundle/tree/main"
             },
-            "time": "2023-04-10T23:53:03+00:00"
+            "time": "2023-04-16T19:11:33+00:00"
         },
         {
             "name": "selenesoftware/inventory-bundle",
-            "version": "dev-main",
+            "version": "dev-new-crud",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SeleneSoftware/seleneInventoryBundle.git",
-                "reference": "d6a854fd552c984c9d94df2656e595c8c3c54276"
+                "reference": "5a9d2be9df50e64f4027f4db64893bb46ba9dac2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SeleneSoftware/seleneInventoryBundle/zipball/d6a854fd552c984c9d94df2656e595c8c3c54276",
-                "reference": "d6a854fd552c984c9d94df2656e595c8c3c54276",
+                "url": "https://api.github.com/repos/SeleneSoftware/seleneInventoryBundle/zipball/5a9d2be9df50e64f4027f4db64893bb46ba9dac2",
+                "reference": "5a9d2be9df50e64f4027f4db64893bb46ba9dac2",
                 "shasum": ""
             },
             "require": {
                 "symfony/doctrine-bridge": "^6.2"
             },
-            "default-branch": true,
             "type": "symfony-bundle",
             "autoload": {
                 "psr-4": {
@@ -2258,10 +2257,10 @@
             ],
             "description": "Add Inventory Management Entities to your project.",
             "support": {
-                "source": "https://github.com/SeleneSoftware/seleneInventoryBundle/tree/main",
+                "source": "https://github.com/SeleneSoftware/seleneInventoryBundle/tree/new-crud",
                 "issues": "https://github.com/SeleneSoftware/seleneInventoryBundle/issues"
             },
-            "time": "2023-04-15T02:21:08+00:00"
+            "time": "2023-04-17T15:33:12+00:00"
         },
         {
             "name": "symfony/asset",
